@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
 import {interval, Subscription} from "rxjs";
 
 @Component({
@@ -13,9 +13,9 @@ export class VariableAssignmentComponent implements OnInit, OnDestroy {
   variable!: number;
   subscription!: Subscription;
 
-  constructor(private cd: ChangeDetectorRef) {
-
-  }
+  // constructor(private cd: ChangeDetectorRef) {
+  //
+  // }
 
 
   ngOnInit() {

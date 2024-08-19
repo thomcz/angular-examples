@@ -27,6 +27,6 @@ export class MemoryLeakComponent implements OnInit, OnDestroy {
     // counter will keep increasing and if you navigate back to this component
     // it will start another subscription and a second counter will keep increasing
 
-    this.subscription.unsubscribe();
+    // this.subscription.unsubscribe();
   }
 }

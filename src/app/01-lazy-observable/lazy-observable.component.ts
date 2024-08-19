@@ -19,6 +19,6 @@ export class LazyObservableComponent implements OnInit {
     this.hello$.pipe(tap(value => {
       this.hello = value;
     }))
-      .subscribe();
+      // .subscribe();
   }
 }
