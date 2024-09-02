@@ -6,6 +6,7 @@ import {NestedSubscriptionsComponent} from "./03-nested-subscriptions/nested-sub
 import {FlatSubscriptionsComponent} from "./04-flat-subscriptions/flat-subscriptions.component";
 import {VariableAssignmentComponent} from "./05-variable-assignment/variable-assignment.component";
 import {AsyncPipeComponent} from "./06-async-pipe/async-pipe.component";
+import {CombineLatestVsComputedComponent} from "./07-combine-latest-vs-computed/combine-latest-vs-computed.component";
 
 export const routes: Routes = [
   {path: 'hello', component: HelloWorldComponent},
@@ -15,5 +16,6 @@ export const routes: Routes = [
   {path: 'flat', component: FlatSubscriptionsComponent},
   {path: 'variable', component: VariableAssignmentComponent},
   {path: 'asyncPipe', component: AsyncPipeComponent},
+  {path: 'combineLatestVsComputed', component: CombineLatestVsComputedComponent},
   {path: '', redirectTo: '/hello', pathMatch: 'full'} // Default route
 ];
